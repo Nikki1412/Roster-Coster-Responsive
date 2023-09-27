@@ -2,74 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta http-equiv="CONTENT-TYPE" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Belajar membuat web galeri Roster">
     <meta name="keywords" content="a, b, c">
     <meta name="author" content="Syam Aziz">
     <title>Roster-Coster</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans:opsz@6..12&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1 class="judul">Roster Coster</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#pro">Product</a></li>
-                <li><a href="#abt">About</a></li>
-                <li><a href="#cont">Contact</a></li>
-            </ul>
-        </div>
-        <div class="hero"></div>
-        <div id="pro" class="product">
-            <h2>Product</h2>
-            <div class="katalog">
-                <img src="gambar/p1_1.jpg" alt="roster1_1">
-                <img src="gambar/p1_3.jpg" alt="roster1_3">
-                <img src="gambar/p1_2.jpg" alt="roster1_2">
+    <main>
+        <div class="container">
+            <header>
+                <div class="header">
+                    <h1 class="judul">Roster Coster</h1>
+                    <ul>
+                        <li><a href="Beranda.html">Beranda</a></li>
+                        <li><a href="Produk.html">Produk</a></li>
+                        <li><a href="Tentang.html">Tentang</a></li>
+                        <li><a href="Kontak.html">Kontak</a></li>
+                    </ul>
+                    <div class="menu-toggle">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </header>
+
+            <script src="script.js"></script>
+
+            <section>
+                <div class="hero"></div>
+            </section>
+
+            <section>
+                <div class="product">
+                    <article>
+                        <div class="sub sub-satu">
+                            <h2>Produk</h2>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="con-konten">
+                            <div class="konten konten-satu">
+                                <div class="cover">
+                                    <img src="gambar/p1_3.jpg" alt="Roster-Putih">
+                                </div>
+                                <div class="keterangan">
+                                    <p>Roster warna putih memiliki keunggulan dalam
+                                        estetika, menciptakan tampilan yang cerah dan menjaga
+                                        stabilitas
+                                        suhu ruangan.</p>
+                                </div>
+                                <p class="penjelasan"><a href="#">Baca Selengkapynya</a></p>
+                            </div>
+                            <div class="konten konten-dua">
+                                <div class="cover">
+                                    <img src="gambar/p2_1.jpg" alt="Roster-Oranye">
+                                </div>
+                                <div class="keterangan">
+                                    <p>Roster warna oranye menawarkan keunggulan berupa
+                                        ketahanan terhadap cuaca, sifat isolasi termal yang baik, dan ramah
+                                        lingkungan.</p>
+                                </div>
+                                <p class="penjelasan"><a href="#">Baca Selengkapynya</a></p>
+                            </div>
+                            <div class="konten konten-tiga">
+                                <div class="cover">
+                                    <img src="gambar/p3_1.jpg" alt="Roster-Hitam">
+                                </div>
+                                <div class="keterangan">
+                                    <p>Roster warna hitam menonjol berkat tampilan modern dan
+                                        minimalisnya. Pilihan terbaik dan tahan lama dalam berbagai kondisi
+                                        lingkungan.
+                                    </p>
+                                </div>
+                                <p class="penjelasan"><a href="#">Baca Selengkapynya</a></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <div class="about">
+                    <article>
+                        <div class="sub sub-dua">
+                            <h2>Tentang</h2>
+                        </div>
+                    </article>
+                    <div class="kotak-about">
+                        <p>Selamat datang di situs kami, pusat utama roster di Kota Purwakarta. Temukan beragam jenis
+                            dan
+                            tipe
+                            roster berkualitas dengan harga kompetitif untuk keperluan konstruksi, pertanian, dan rumah
+                            tangga Anda.
+                            Kualitas dan kepuasan pelanggan adalah prioritas utama kami. Selamat berbelanja!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact">
+                    <article>
+                        <div class="sub sub-tiga">
+                            <h2>Kontak</h2>
+                        </div>
+                    </article>
+                    <div class="kotak-contact">
+                        <div class="kotak-dua wa">
+                            <img src="gambar/Wa.png" alt="Whatspp">
+                            <p>083816211833</p>
+                        </div>
+                        <div class="kotak-dua gmail">
+                            <img src="gambar/Gm.png" alt="Gmail">
+                            <p> Hendra@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer">
+                <h2>Copyright 2023. Desained by Nikki. Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </h2>
             </div>
-            <div class="katalog">
-                <img src="gambar/p2_1.jpg" alt="roster1_1">
-                <img src="gambar/p2_3.jpg" alt="roster1_3">
-                <img src="gambar/p2_2.jpg" alt="roster1_2">
-            </div>
-            <div class="katalog">
-                <img src="gambar/p3_1.jpg" alt="roster1_1">
-                <img src="gambar/p3_3.jpg" alt="roster1_3">
-                <img src="gambar/p3_2.jpg" alt="roster1_2">
-            </div>
         </div>
-        <div id="abt" class="about">
-            <h2>About</h2>
-            <!-- <p>Selamat datang di situs kami, pusat utama untuk semua kebutuhan roster Anda! Kami dengan bangga
-                menyediakan beragam
-                jenis dan tipe roster yang sesuai dengan berbagai kebutuhan Anda. Terletak di Kecamatan Plered,
-                Kabupaten Purwakarta,
-                kami menjadi destinasi terpercaya untuk semua orang yang mencari roster berkualitas. Kami mengerti
-                betapa pentingnya
-                roster dalam berbagai konteks, dan itulah mengapa kami berkomitmen untuk menyajikan pilihan terbaik
-                dengan harga yang
-                kompetitif. Apakah Anda membutuhkan roster untuk proyek konstruksi, pertanian, atau bahkan keperluan
-                rumah tangga, kami
-                memiliki yang Anda butuhkan. Jelajahi koleksi kami dan temukan solusi roster yang sempurna untuk Anda.
-                Selamat
-                berbelanja di situs kami, di mana kualitas dan kepuasan pelanggan adalah prioritas utama kami!</p> -->
-            <p>Selamat datang di situs kami, pusat utama roster di Kecamatan Plered, Purwakarta. Temukan beragam jenis
-                dan tipe roster
-                berkualitas dengan harga kompetitif untuk keperluan konstruksi, pertanian, dan rumah tangga Anda.
-                Kualitas dan kepuasan
-                pelanggan adalah prioritas utama kami. Selamat berbelanja!</p>
-        </div>
-        <div id="cont" class="contact">
-            <h2>Contact</h2>
-            <h3>WA: 083816211833</h3>
-            <h3>Email: Hendra@gmail.com</h3>
-        </div>
-        <div class="footer">
-            <h2>Copyright 2023. Nikki.</h2>
-        </div>
-    </div>
+    </main>
 </body>
 
 </html>
