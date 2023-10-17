@@ -335,13 +335,6 @@ nav ul li a {
     .kotak-kontak .qr {
         max-width: 250px;
     }
-
-    /* .contact .kotak-kontak {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        justify-items: center;
-    } */
 }
 
 /* Responsive Breakpoint Mobile */
@@ -357,11 +350,6 @@ nav ul li a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 250px 200px;
     }
-
-    /* .contact .kotak-kontak {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    } */
 
     .kotak-kontak .QRcode {
         grid-template-rows: 200px 30px 50px 30px;

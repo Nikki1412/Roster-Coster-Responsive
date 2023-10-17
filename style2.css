@@ -123,7 +123,7 @@ nav ul li a:hover {
     gap: 1rem;
 }
 
-.product .sub-judul4 {
+.product .sub-judul2 {
     grid-area: judul;
     position: relative;
     width: 13rem;
@@ -134,7 +134,7 @@ nav ul li a:hover {
     margin-left: -1.5rem;
 }
 
-.product .sub-judul4 h2 {
+.product .sub-judul2 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     color: chocolate;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-.product .sub-judul4::before {
+.product .sub-judul2::before {
     content: "";
     width: 100%;
     height: 100%;
