@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html" charset="UTF-8">
+    <meta name="description" content="Web Responsive Galeri Roster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="a, b, c">
+    <meta name="author" content="Syam Aziz">
+    <title>Roster-Coster | Tentang</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans:opsz@6..12&display=swap">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navigasi -->
+        <nav class="menu">
+            <div class="logo">
+                <h1>Roster Coster</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- ----------Javascript Hamburger Menu---------- -->
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const navigator = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+                navigator.classList.toggle('slide');
+            });
+        </script>
+
+        <!-- Hero -->
+        <div class="Hero">
+            <div class="main-feature"></div>
+            <div class="feature feature1"></div>
+            <div class="feature feature2"></div>
+        </div>
+
+        <!-- Konten->Teantang -->
+        <section class="konten">
+            <div class="about">
+                <div class="sub-judul2">
+                    <h2>Tentang</h2>
+                </div>
+                <div class="kotak-keterangan">
+                    <p>Selamat datang di Roster Coster, tempat terbaik untuk menemukan koleksi luar biasa dari roster
+                        ventilasi udara yang unik
+                        dan menarik! Kami menghadirkan berbagai jenis roster yang memukau, seperti roster oranye yang
+                        terbuat dari tanah liat,
+                        roster putih yang elegan dari semen putih, dan roster abu yang didesain indah dari pasir. Tidak
+                        hanya itu, kami juga
+                        menawarkan beragam pola dan desain eksklusif yang dapat Anda pilih sesuai dengan gaya dan
+                        kebutuhan Anda. Dengan
+                        kualitas terbaik dan variasi yang tak tertandingi, Roster Coster adalah destinasi utama untuk
+                        mengubah ventilasi udara
+                        menjadi karya seni yang fungsional. Temukan inspirasi dan perbarui tampilan ruangan Anda dengan
+                        roster kami yang memikat
+                        hari ini!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3>Copyright 2023. Desained by Nikki. Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </h3>
+        </footer>
+
+    </div>
+</body>
+
+</html>

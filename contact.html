@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html" charset="UTF-8">
+    <meta name="description" content="Web Responsive Galeri Roster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="a, b, c">
+    <meta name="author" content="Syam Aziz">
+    <title>Roster-Coster | Kontak</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans:opsz@6..12&display=swap">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navigasi -->
+        <nav class="menu">
+            <div class="logo">
+                <h1>Roster Coster</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- ----------Javascript Hamburger Menu---------- -->
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const navigator = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+                navigator.classList.toggle('slide');
+            });
+        </script>
+
+        <!-- Hero -->
+        <div class="Hero">
+            <div class="main-feature"></div>
+            <div class="feature feature1"></div>
+            <div class="feature feature2"></div>
+        </div>
+
+        <!-- Konten->Kontak -->
+        <section class="konten">
+            <div class="contact">
+                <div class="sub-judul3">
+                    <h2>Kontak</h2>
+                </div>
+                <div class="kotak-kontak">
+                    <div class="QRcode wa">
+                        <img class="qr" src="gambar/SY_WAQR.png" alt="WAcode">
+                        <span>Atau klik icon dibawah </span>
+                        <a href="https://wa.me/6283820680486" target="_blank"><img class="ikon" src="gambar/Wa.png"
+                                alt="Whatspp"></a>
+                        <p>(+62) 83820680486<br>[a.n Syam Abdul Aziz]
+                        </p>
+                    </div>
+                    <div class="QRcode email">
+                        <img class="qr" src="gambar/SY_EmailQR.png" alt="Emailcode">
+                        <span> Atau klik icon dibawah </span>
+                        <a href="https://mail.google.com/mail/?view=cm&to=syam.aziz1412@gmail.com" target="_blank"><img
+                                class="ikon" src="gambar/Gm.png" alt="Gmail"></a>
+                        <p>syam.aziz1412@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3>Copyright 2023. Desained by Nikki. Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </h3>
+        </footer>
+
+    </div>
+</body>
+
+</html>

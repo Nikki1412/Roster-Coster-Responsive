@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html" charset="UTF-8">
+    <meta name="description" content="Web Responsive Galeri Roster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="a, b, c">
+    <meta name="author" content="Syam Aziz">
+    <title>Roster-Coster | Produk</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans:opsz@6..12&display=swap">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navigasi -->
+        <nav class="menu">
+            <div class="logo">
+                <h1>Roster Coster</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- ----------Javascript Hamburger Menu---------- -->
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const navigator = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function () {
+                navigator.classList.toggle('slide');
+            });
+        </script>
+
+        <!-- Hero -->
+        <div class="Hero">
+            <div class="main-feature"></div>
+            <div class="feature feature1"></div>
+            <div class="feature feature2"></div>
+        </div>
+
+        <!-- Konten->Produk -->
+        <section class="konten">
+            <div class="product">
+                <div class="sub-judul4">
+                    <h2>Produk</h2>
+                </div>
+                <div class="kotak-produk">
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p1_1.jpg" alt="">
+                        </div>
+                        <div class="icon">🎇</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p1_3.jpg" alt="">
+                        </div>
+                        <div class="icon">🎇</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p1_2.jpg" alt="">
+                        </div>
+                        <div class="icon">🎇</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p2_1.jpg" alt="">
+                        </div>
+                        <div class="icon">🧱</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p2_3.jpg" alt="">
+                        </div>
+                        <div class="icon">🧱</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p2_2.jpg" alt="">
+                        </div>
+                        <div class="icon">🧱</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p3_1.jpg" alt="">
+                        </div>
+                        <div class="icon">🗿</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p3_2.jpg" alt="">
+                        </div>
+                        <div class="icon">🗿</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+
+                    <div class="produk">
+                        <div class="warna">
+                            <img src="gambar/p3_3.jpg" alt="">
+                        </div>
+                        <div class="icon">🗿</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sed!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3>Copyright 2023. Desained by Nikki. Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </h3>
+        </footer>
+
+    </div>
+</body>
+
+</html>

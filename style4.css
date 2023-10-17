@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 2em; */
+    background-image: url(gambar/webb-dark.png);
+    overflow-x: hidden;
+}
+
+/* ------------------------Container---------------------------- */
+.container {
+    width: 80%;
+    background-color: blanchedalmond;
+    margin: auto;
+    display: grid;
+}
+
+/* ------------------------Navigasi---------------------------- */
+nav {
+    font-size: 4vmax;
+    display: grid;
+    grid-template-areas:
+        'judul'
+        'menu-list';
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.3rem;
+}
+
+nav .logo h1 {
+    grid-area: judul;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: chocolate;
+    justify-items: center;
+}
+
+nav ul {
+    width: 80%;
+    grid-area: menu-list;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 100px));
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    color: brown;
+    text-decoration: none;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: burlywood;
+    color: white;
+}
+
+/* ------------------------Hero---------------------------- */
+.Hero {
+    border-top: 8px solid brown;
+    border-bottom: 8px solid chocolate;
+    display: grid;
+    grid-template-areas:
+        'main feature-1 feature-2';
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.Hero .main-feature {
+    grid-area: main;
+    background-image: url(gambar/roster.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Hero .feature {
+    background-color: antiquewhite;
+    /* min-width: 300px; */
+}
+
+.Hero .feature1 {
+    grid-area: feature-1;
+    background-image: url(gambar/roster2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Hero .feature2 {
+    grid-area: feature-2;
+    background-image: url(gambar/roster3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -----------------------Konten-Kontak--------------------------- */
+
+.konten {
+    padding: 2rem 0;
+    overflow-x: hidden;
+    border-bottom: 8px solid brown;
+}
+
+.konten .contact {
+    display: grid;
+    grid-template-areas:
+        'judul'
+        'kotak-kon';
+    grid-template-rows: 50px 1fr;
+    gap: 1rem;
+}
+
+.contact .sub-judul3 {
+    grid-area: judul;
+    position: relative;
+    width: 13rem;
+    height: 2.5rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: -1.5rem;
+}
+
+.contact .sub-judul3 h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    color: chocolate;
+    font-weight: bold;
+    position: relative;
+}
+
+.contact .sub-judul3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-50deg);
+    background-color: brown;
+}
+
+.contact .kotak-kontak {
+    grid-area: kotak-kon;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    justify-items: center;
+}
+
+.kotak-kontak .QRcode {
+    display: grid;
+    grid-template-rows: 300px 30px 50px 30px;
+    font-size: 1.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.kotak-kontak .qr {
+    max-width: 300px;
+}
+
+.kotak-kontak .ikon {
+    width: 50px;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+/* ------------------------Footer----------------------------- */
+
+.footer {
+    padding: 0.5rem;
+    background-color: chocolate;
+}
+
+.footer h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+}
+
+/* ----------------------Hamburger Menu-------------------------------- */
+
+.menu-toggle {
+    grid-area: menu-ham;
+    display: none;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+/* -----------------Hamburger Menu Animation-------------------------- */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: chocolate;
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: chocolate;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Responsive Breakpoint Full HD */
+/* @media screen and (max-width: 1024px) {
+nav {
+    grid-template-areas:
+        'judul'
+        'menu-list';
+    gap: 0.2rem;
+    grid-template-columns: 1fr;
+}
+
+
+nav ul {
+    max-width: 80%;
+    justify-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+}
+
+nav ul li a {
+    background-color: inherit;
+}
+
+} */
+
+/* Responsive Breakpoint Tablet */
+@media screen and (max-width: 885px) {
+    nav {
+        grid-template-areas:
+            'judul menu-ham';
+        grid-template-columns: 2fr 1fr;
+        padding: 1rem 2rem;
+    }
+
+    nav .logo h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    nav .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-self: end;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: blanchedalmond;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        background-color: inherit;
+        font-size: 0.45em;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        background-color: burlywood;
+        color: white;
+    }
+
+    .menu ul.slide {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .kotak-kontak .qr {
+        max-width: 250px;
+    }
+
+    /* .contact .kotak-kontak {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    } */
+}
+
+/* Responsive Breakpoint Mobile */
+@media screen and (max-width: 635px) {
+    .container {
+        width: 90%;
+    }
+
+    .Hero {
+        grid-template-areas:
+            'main main'
+            'feature-1 feature-2';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 200px;
+    }
+
+    /* .contact .kotak-kontak {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    } */
+
+    .kotak-kontak .QRcode {
+        grid-template-rows: 200px 30px 50px 30px;
+    }
+
+    .kotak-kontak .qr {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav .logo h1 {
+        font-size: 0.7em;
+        /* text-align: center; */
+    }
+
+    .contact .kotak-kontak {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
