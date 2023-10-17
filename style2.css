@@ -204,7 +204,7 @@ nav ul li a:hover {
     color: black;
 }
 
-/* ----------------------Hamburger Menu-------------------------------- */
+/* ----------------------Hamburger Menu------------------------------ */
 
 .menu-toggle {
     grid-area: menu-ham;
@@ -260,7 +260,9 @@ nav ul li a:hover {
     background-color: chocolate;
 }
 
-/* ------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------- */
 
 /* Responsive Breakpoint Full HD */
 /* @media screen and (max-width: 1024px) {
