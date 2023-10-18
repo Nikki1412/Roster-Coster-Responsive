@@ -301,7 +301,7 @@ nav ul li a:hover {
         align-items: center;
         justify-content: space-evenly;
         z-index: 1;
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: all 1s;
         opacity: 0;
     }

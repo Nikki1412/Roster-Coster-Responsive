@@ -474,7 +474,7 @@ nav ul li a {
         align-items: center;
         justify-content: space-evenly;
         z-index: 1;
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: all 1s;
         opacity: 0;
     }
@@ -516,6 +516,10 @@ nav ul li a {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        overflow: hidden;
+    }
+
     nav .logo h1 {
         font-size: 0.7em;
         /* text-align: center; */
